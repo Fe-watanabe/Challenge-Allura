@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/javascript" src="criptografador.js"></script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img class="cabecalho__logo" src="./assets/Frame 6.png" alt="logo da Alura">
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="campoPrincipal">
+
+            <div class="campoPrincipal__ladoEsquerdo">
+                <textarea id="inputTexto" class="campoPrincipal__ladoEsquerdo__areatexto" placeholder="Digite seu texto"></textarea>
+                <div class="campoPrincipal__ladoEsquerdo__areatexto__footer_esquerdo">
+                    <img src="./assets/bi_exclamation-circle-fill.svg" alt="simbolo de exclamacao">
+                    <span class="informacao">Apenas letras minúsculas e sem acento.</span>
+                    <div class="campoPrincipal__ladoEsquerdo__areatexto__footer_esquerdo__botoes">
+                        <button id="btn-encriptar" class="botao__encriptar" onclick="criptografarTexto()">Criptografar</button>
+                        <button id="btn-desencriptar" class="botao__desencriptar" onclick="descriptografarTexto()">Descriptografar</button>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="ladoDireito">
+                <img id="figura" class="figura" src="./assets/High quality products 1 1.svg" alt="garota com uma lupa na mão">
+                <textarea id="resultado" class="mensagem">Nenhuma mensagem encontrada</textarea>
+                <p id="paragrafo" class="mensagem_explicacao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button class="botao__copiar" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span> &copy; Copyright - Encriptador de Texto- Felipe Andres Watanabe Pinto</span>
+    </footer>
+</body>
+</html>
